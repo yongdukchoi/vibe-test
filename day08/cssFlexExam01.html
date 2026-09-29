@@ -8,33 +8,47 @@
         .container{
             display: flex;
             flex-direction: row;
+            justify-content: center;
             align-items: center;
             height: 100vh;
         }
         .login-box{
+             /*선그리기 :두께 선모양 색상*/
+             border: 1px solid black;
+             width: 400px;
+             height:350px;
+             border-radius:20px;
              display: flex;
              flex-direction: column;
-             /*선그리기 :*/
-             border: 1px solid #ccc; /*선 두께, 종류, 색*/
+             align-items: center;
         }
         .title{
             text-align: center; /*글자 정렬*/
-            font-size: 30px; /*글자 크기*/
+            font-size: 40px; /*글자 크기*/
             font-weight: bold; /*글자 두께*/
-            padding-top: 20px; /*공간의 내부 박스 사이 넗히기*/
+            padding-top: 20px; /*공간의 내부 box 넗히기*/
             margin-bottom: 50px; /*공간 끼리 사이 넗히기*/
         }
         .input{
             width: 300px;
             height: 40px;
-            border-radius: 5px;
+            border-radius: 2px;
             border: 0; /*기본선 제거*/
+            border-bottom: 1px solid black; /* 밑선만 만듬*/
+            outline: 0; /*input 에 커서가 가면 생기는 라인*/
+            margin-top: 10px;
+
         }
         .btn{
             margin-top: 25px;
         }
         .ok-btn{
             width: 90px;
+            height: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background-color: blue;
             border: 0;
             border-radius: 5px;
         }
@@ -47,10 +61,10 @@
             login
            </div> 
            <div>
-              <input type="text" class="input" placeholder="ID">
+              <input type="text"  placeholder="ID">
            </div>
            <div>
-              <input type="password" class="input" placeholder="PASSWORD">
+              <input type="text" placeholder="PASSWORD">
            </div>
            <div class="btn">
             <button type="button" class="ok-btn">로그인</button>
